@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main--color: #FFFEFA;
+    --second-color: #EB5E28;
+    --third-color: black;
+}
+
+body {
+    background-color: var(--main--color);
+}
+
+.color{
+    color: var(--second-color);
+}
+
+.underline{
+    text-decoration: underline  2px var(--second-color);
+    text-underline-offset: 4px;
+}
+
+.Header {
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Header nav{
+    display: flex;
+    width: 100%;
+    padding: 0 7%;
+    justify-content: space-between;
+}
+
+.Header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.Header nav ul li{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.Header nav ul a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.Header .active{
+    color: #EB5E28 !important;
+    
+}
+
+.Home{
+    position: relative;
+}
+
+.Home_Hero{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.Line{
+    height: 80vh;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-right: 2px dashed #EB5E28;
+}
+
+.Home_Hero_Pict{
+    width: 0;
+    height: 60vh;
+    background-image: url('./assets/homePict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Home_Hero_Counter{
+    position: absolute;
+    bottom: 0vh;
+    font-family: 'Jost', sans-serif;
+    font-size: 12rem;
+    font-weight: 300;
+    color: var(--second-color);
+    white-space: nowrap;
+}
+
+.Home_Pres{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7%;
+    background-color: var(--main--color);
+}
+
+.Home_Pres h3{
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    color: var(--third-color);
+}
+
+.Home_Pres h3 span{
+    color: var(--second-color);
+}
+
+.Home_Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+}
+
+.Home_Project{
+    display: flex;
+}
+
+.Home_Project h4{
+    transform: rotate(90deg);
+    width: 0vw;
+    height: 3vh;
+    font-family: 'Jost', sans-serif;
+    white-space: nowrap;
+}
+
+.Home_Project_Pict{
+    height: 70vh;
+    width: 25vw;
+    background-size: cover;
+    margin: 0 2rem 0 1.5rem;
+}
+
+.Home_Project_Pict1{
+    background-image: url('./assets/desertPict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Home_Project_Pict2{
+    background-image: url('./assets/carInDesertPict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Home_Project_Pict3{
+    background-image: url('./assets/woodPict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Footer{
+    padding: 2rem 7% 6rem 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_ContactForm{
+    width: 50%
+}
+
+.Footer_ContactForm h4{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+.Footer_ContactForm_input{
+    position: relative;
+    height: 4rem;
+    width: 20rem;
+}
+
+.Footer_ContactForm_input .box{
+    position: absolute;
+    height: 1rem;
+    width: 1.5rem;
+}
+
+.left_top{
+    top: 0;
+    left: 0;
+    border: solid 1.5px var(--third-color);
+    border-right: none;
+    border-bottom: none;
+}
+
+.right_top{
+    top: 0;
+    right: 0;
+    border: solid 1.5px var(--third-color);
+    border-left: none;
+    border-bottom: none;
+}
+
+.left_bottom{
+    bottom: 0;
+    left: 0;
+    border: solid 1.5px var(--third-color);
+    border-right: none;
+    border-top: none;
+}
+
+.right_bottom{
+    bottom: 0;
+    right: 0;
+    border: solid 1.5px var(--third-color);
+    border-left: none;
+    border-top: none;
+}
+
+input{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%,-50%);
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--main--color);
+}
+
+input:focus{
+    outline:  none;
+    border: none;
+}
+
+.Footer_ContactMedias{
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer_ContactMedias h4{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+.Footer_ContactMedias img{
+    margin: 0 0.5rem;
+}
+
+.Contact{
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0 7%;
+    overflow-x:hidden;
+    max-width: 100%;
+}
+
+.Contact p{
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.Contact_mail{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    
+    padding: 3rem 0;
+}
+
+.Contact_mail p{
+    font-family: 'Jost', sans-serif;
+    color: #9E9E9E;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.Contact_mail :nth-child(1){
+    padding-bottom: 0.5rem;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    font-weight: 300;
+}
+
+.Contact_ContactMedias_Icons{
+    display: flex;
+    gap: 1rem;
+}
+.Contact_Hero_Counter{
+    font-family: 'Jost', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    color: var(--second-color);
+    white-space: nowrap;
+}
+
+.Contact_Counter{
+    overflow: hidden;
+    margin-top: 10rem;
+    height: 10rem;
+    width: 100vw;
+}
+
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-color);
+    z-index: 1000;
+    animation-delay: 0s;
+    animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 0.5s forwards;
+}
+
+.About_Hero{
+    width: 100vw;
+    height: 70vh;
+    margin-bottom: 15vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.About_Hero p{
+    font-size: 1.2rem;
+    right: 10vw;
+    position: absolute;
+    text-align: start;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--third-color);
+    transform: rotate(90deg);
+}
+
+.About_Hero_Pict{
+    width: 60vw;
+    height: 60vh;
+    background-image: url('./assets/aboutPict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.About_Pres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7% 14% 7%;
+    gap: 4rem;
+}
+
+.About_Pres h3{
+    font-size: 4rem;
+    text-align: start;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    color: var(--third-color);
+}
+
+.About_Pres p{
+    font-size: 2.5rem;
+    text-align: start;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    color: var(--second-color);
+}
+
+.Work_Hero{
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 15vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Work_Hero p{
+    font-size: 1.2rem;
+    right: 10%;
+    position: absolute;
+    text-align: start;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--third-color);
+    transform: rotate(90deg);
+}
+
+.Work_Hero_Pict{
+    width: 60vw;
+    height: 60vh;
+    background-image: url('./assets/desertHorPict.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+    left: 0;
+    }
+    to {
+    left: 100%;
+    }
+}
