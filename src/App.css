@@ -374,8 +374,8 @@ input:focus{
 }
 
 .About_Pres h3{
-    font-size: 4rem;
-    text-align: start;
+    font-size: 2.5rem;
+    text-align: center;
     font-family: 'Jost', sans-serif;
     font-weight: 200;
     color: var(--third-color);
@@ -418,6 +418,55 @@ input:focus{
     background-image: url('./assets/desertHorPict.png');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7% 14% 7%;
+    gap: 4rem;
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    .title{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 4rem;
+            text-align: start;
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            color: var(--third-color);
+        }
+        p{
+            font-size: 2rem;
+            text-align: start;
+            font-family: 'Jost', sans-serif;
+            font-weight: 200;
+            color: var(--second-color);
+            padding: 2rem 0;
+        }
+    }
+    h4{
+        font-size: 2rem;
+        text-align: start;
+        font-family: 'Jost', sans-serif;
+        font-weight: 200;
+        color: var(--second-color);
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: start;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+        color: var(--third-color);
+    }
 }
 
 @keyframes slideIn {

@@ -21,7 +21,7 @@ export default class Footer extends Component {
                     <div className="Footer_ContactMedias_Icons">
                         <img src={Instagram} alt="" />
                         <img src={Linkedin} alt="" />
-                        <img src={X} alt="" />
+                        {/* <img src={X} alt="" /> */}
                     </div>
                 </div>
             </div>

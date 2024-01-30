@@ -14,9 +14,9 @@ export default class Header extends Component {
                         <li className={window.location.pathname === "/aboutme" ? "active-page" : ""}>
                             <NavLink exact to="/about" activeclassname="active-link">about me</NavLink>
                         </li>
-                        <li className={window.location.pathname === "/mywork" ? "active-page" : ""}>
+                        {/* <li className={window.location.pathname === "/mywork" ? "active-page" : ""}>
                             <NavLink exact to="/mywork" activeclassname="active-link">my work</NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className='flex'>
                         <li className={window.location.pathname === "/contact" ? "active-page" : ""}>
