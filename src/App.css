@@ -5,7 +5,7 @@
 
 :root {
     --main--color: #FFFEFA;
-    --second-color: #EB5E28;
+    --second-color: #1E00FF;
     --third-color: black;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .Header .active{
-    color: #EB5E28 !important;
+    color: var(--second-color) !important;
     
 }
 
@@ -81,7 +81,7 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
-    border-right: 2px dashed #EB5E28;
+    border-right: 2px dashed var(--second-color);
 }
 
 .Home_Hero_Pict{
@@ -259,6 +259,8 @@ input:focus{
 
 .Footer_ContactMedias img{
     margin: 0 0.5rem;
+    padding-top: 2rem;
+    height: 4dvh;
 }
 
 .Contact{
@@ -276,6 +278,10 @@ input:focus{
     font-size: 3.5rem;
     text-align: center;
     font-family: 'Jost', sans-serif;
+}
+
+.Contact p img{
+    transform: translate(0px, 25px);
 }
 
 .Contact_mail{
@@ -448,7 +454,7 @@ input:focus{
             font-size: 2rem;
             text-align: start;
             font-family: 'Jost', sans-serif;
-            font-weight: 200;
+            font-weight: 300;
             color: var(--second-color);
             padding: 2rem 0;
         }
@@ -459,6 +465,8 @@ input:focus{
         font-family: 'Jost', sans-serif;
         font-weight: 200;
         color: var(--second-color);
+        padding: 4dvh 0;
+
     }
     p{
         font-size: 1.5rem;

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Mechanical from '../assets/mechanical.png';
+import ArtOfLife from '../assets/artOfLife.png';
 gsap.registerPlugin(ScrollTrigger);
 
 export default class Home extends Component {
@@ -107,7 +108,7 @@ export default class Home extends Component {
                 </div>
                 <div className="projects">
                     <div className="project1">
-                        <img src={Mechanical} alt="" />
+                        <img src={ArtOfLife} alt="" />
                         <div className="title"> 
                             <h2>Art of life</h2>
                             <p>2023/2024</p>
